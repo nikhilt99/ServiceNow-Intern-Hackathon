@@ -14,11 +14,11 @@ const App = () => {
       </section>
       <section className="completed-events">
         <h2> Completed Events</h2>
-        <Event event={events[0]}/>
+        <Event event={events[1]}/>
       </section>
       <section className="past-events">
         <h2> Past Events</h2>
-        <Event event={events[0]}/>
+        <Event event={events[2]}/>
       </section>
     </div>
   );
