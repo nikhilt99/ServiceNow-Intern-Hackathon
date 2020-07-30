@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import './Navbar.css';
-import $ from 'jquery';
-
-$("a").click(() => { alert("test"); });
 
 const Navbar = () => {
   return (

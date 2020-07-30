@@ -1,6 +1,5 @@
 import React from "react";
 import Dashboard from "../components/Dashboard/Dashboard";
-import $ from "jquery";
 
 const Home = () => {
   return (
