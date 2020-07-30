@@ -10,8 +10,23 @@ import Navbar from "./components/Navbar/Navbar"
 import Home from "./pages/home";
 import Events from "./pages/events";
 import Points from "./pages/points";
+import { events } from "./utils";
+import navbar from "./assets/navbar.png";
+import Dashboard from "./components/Dashboard/Dashboard";
+import sidebar from "./assets/sidebar.png";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+  Row,
+  Col,
+} from "react-bootstrap";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+import Event from "./components/Event";
+import "./App.css";
 
 const App = () => {
   return (

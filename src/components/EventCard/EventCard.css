@@ -1,0 +1,63 @@
+.card {
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 0;
+  position: relative;
+}
+
+.btn-tray {
+  position: absolute;
+  top: 125px;
+  right: 15px;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.btn-event-action {
+  border: 1px solid #E0E0E0;
+  background-color: #fff;;
+  width: 50px;
+  height: 50px;
+}
+
+.card-subtitle {
+  color: #546566;
+}
+
+.card-title {
+  color: #2A3D40;
+  font-weight: 600;
+  margin: .75rem 0;
+}
+
+.participant-profile {
+  width: 30px;
+  height: 30px;
+}
+
+.profile-items + .profile-items {
+  padding: 0;
+  margin-left: -5px;
+}
+
+.btn-join {
+  background: #546566;
+  border: none;
+  border-radius: 50px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-weight: 600;
+}
+
+.btn-join:hover {
+  background: #2a3d40;
+}
+
+.fi-video-icon {
+  margin-bottom: 2px;
+  margin-right: 7px;
+}
