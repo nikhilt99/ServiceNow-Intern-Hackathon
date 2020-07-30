@@ -1,14 +1,22 @@
 import React from "react";
-import "./App.css";
-import Event from "./components/Event";
 import { events } from "./utils";
 import navbar from "./assets/navbar.png";
 import Dashboard from "./components/Dashboard/Dashboard";
 import sidebar from "./assets/sidebar.png";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+  Row,
+  Col,
+} from "react-bootstrap";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+import Event from "./components/Event";
+import EventCard from "./components/EventCard/EventCard";
+import "./App.css";
 
 const App = () => {
   return (
@@ -16,11 +24,36 @@ const App = () => {
       <img className="navbar-img" src={navbar} alt="Navbar" />
       <hr className="navbar-line" />
       <Row>
-        <Col sm={2}>
+        <Col md={2}>
           <img className="sidebar" src={sidebar} alt="Navbar" />
         </Col>
-        <Col sm={8}>
-          <Dashboard name="Jeffrey Chou" points="375" level="2" teammates="Kenneth Chen, Nikhil Tangella, Jaden Padua"></Dashboard>
+        <Col md={8}>
+          <Dashboard
+            name="Jeffrey Chou"
+            points="375"
+            level="2"
+            teammates="Kenneth Chen, Nikhil Tangella, Jaden Padua"
+          ></Dashboard>
+
+          <h1>My Events</h1>
+
+          <Row className="my-event-tabs">
+            <Col md="auto">
+              <p className="active">Upcoming</p>
+            </Col>
+            <Col md="auto">
+              <p>Past</p>
+            </Col>
+            <Col md="auto">
+              <p>All</p>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col>
+              <EventCard />
+            </Col>
+          </Row>
 
           <section className="upcoming-events">
             <h2> Upcoming Events</h2>
