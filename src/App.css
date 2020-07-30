@@ -1,10 +1,28 @@
 .App {
-  text-align: center;
+  font-family: Gilroy, sans-serif;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+h1 {
+  color: #474D52;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.my-event-tabs p {
+  font-weight: 600;
+  color: #828282;
+  padding-bottom: .7rem;
+}
+
+.my-event-tabs p.active {
+  font-weight: 600;
+  color: #2A3D40;
+  border-bottom: 3px solid #2A3D40;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -59,3 +77,5 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+/* main content area */
