@@ -67,7 +67,9 @@ span {
 #Dashboard {
   font-family: 'Gilroy';
   width: 500px;
-  margin-left: 100px;
+  margin-left: 31px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   text-align: left;
   font-size: 14px;
 }

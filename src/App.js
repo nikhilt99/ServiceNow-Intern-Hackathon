@@ -4,6 +4,9 @@ import Event from "./components/Event";
 import { events } from "./utils";
 import navbar from "./assets/navbar.png";
 import Dashboard from "./components/Dashboard/Dashboard";
+import sidebar from "./assets/sidebar.png";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -12,20 +15,33 @@ const App = () => {
     <div className="App">
       <img className="navbar-img" src={navbar} alt="Navbar" />
       <hr className="navbar-line" />
-      <Dashboard name="Jeffrey Chou" points="375" level="2" teammates="Kenneth Chen, Nikhil Tangella, Jaden Padua"></Dashboard>
-      <section className="upcoming-events">
-        <h2> Upcoming Events</h2>
+      <Row>
+        <Col sm={2}>
+          <img className="sidebar" src={sidebar} alt="Navbar" />
+        </Col>
+        <Col sm={8}>
+          <Dashboard name="Jeffrey Chou" points="375" level="2" teammates="Kenneth Chen, Nikhil Tangella, Jaden Padua"></Dashboard>
 
-        <Event event={events[0]} />
-      </section>
-      <section className="completed-events">
-        <h2> Completed Events</h2>
-        <Event event={events[1]} />
-      </section>
-      <section className="past-events">
-        <h2> Past Events</h2>
-        <Event event={events[2]} />
-      </section>
+          <section className="upcoming-events">
+            <h2> Upcoming Events</h2>
+            <Event event={events[0]} />
+            <br />
+            <hr className="navbar-line" />
+          </section>
+          <section className="completed-events">
+            <h2> Completed Events</h2>
+            <Event event={events[1]} />
+            <br />
+            <hr className="navbar-line" />
+          </section>
+          <section className="past-events">
+            <h2> Past Events</h2>
+            <Event event={events[2]} />
+            <br />
+            <hr className="navbar-line" />
+          </section>
+        </Col>
+      </Row>
     </div>
   );
 };
