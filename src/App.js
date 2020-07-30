@@ -12,7 +12,6 @@ const App = () => {
     <div className="App">
       <img className="navbar-img" src={navbar} alt="Navbar" />
       <hr className="navbar-line" />
-      <h1>Welcome to Game-Now!</h1>
       <Dashboard name="Jeffrey Chou" points="375" level="2" teammates="Kenneth Chen, Nikhil Tangella, Jaden Padua"></Dashboard>
       <section className="upcoming-events">
         <h2> Upcoming Events</h2>
