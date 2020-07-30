@@ -1,0 +1,75 @@
+.title {
+  font-weight: bold;
+  color: #474D52;
+  font-size: 35px;
+}
+
+.profile-card {
+  border: 1px #E0E0E0 solid;
+  border-top: 7px #CDE0D8 solid;
+  border-radius: 3px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.profile-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-flex-left {
+  flex-grow: 1;
+  padding-right: 50px;
+  font-weight: 300;
+}
+
+.point-bar {
+  margin-top: 8px;
+}
+
+.profile-flex-right {
+  flex-grow: 1;
+}
+
+#point-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+span {
+  font-weight: 500;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: auto;
+  width: 90%;
+}
+
+#profile-name {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.progress {
+  margin-top: 3px;
+  margin-bottom: 10px;
+  height: 7px !important;
+}
+
+.progress-bar {
+  background-color: #2A3D40 !important;
+}
+
+#Dashboard {
+  font-family: 'Gilroy';
+  width: 500px;
+  margin-left: 31px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: left;
+  font-size: 14px;
+}

@@ -5,6 +5,10 @@ import { events } from "./utils";
 import navbar from "./assets/navbar.png";
 import ToggleButton from 'react-bootstrap/ToggleButton'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import Dashboard from "./components/Dashboard/Dashboard";
+import sidebar from "./assets/sidebar.png";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -22,9 +26,22 @@ const App = () => {
     <div className="App">
       <img className="navbar-img" src={navbar} alt="Navbar" />
       <hr className="navbar-line" />
-      <h1>Welcome to Game-Now!</h1>
 
-      <ButtonGroup toggle className="mb-2">
+      
+      
+     
+      <Row>
+        <Col sm={2}>
+          <img className="sidebar" src={sidebar} alt="Navbar" />
+        </Col>
+        <Col sm={8}>
+          <Dashboard name="Jeffrey Chou" points="375" level="2" teammates="Kenneth Chen, Nikhil Tangella, Jaden Padua"></Dashboard>
+         
+          <h2>My Events</h2>
+
+
+
+        <ButtonGroup toggle className="mb-2">
         <ToggleButton
           type="checkbox"
           variant="secondary"
@@ -32,7 +49,8 @@ const App = () => {
           value="1"
           onChange={(e) => setChecked(e.currentTarget.checked)}
         >
-          Create Event
+         
+
         </ToggleButton>
       </ButtonGroup>
       <br />
@@ -51,7 +69,10 @@ const App = () => {
           </ToggleButton>
         ))}
       </ButtonGroup>
-      <div>
+
+
+
+
       {(function() {
         switch (EventType) {
           case '1':
@@ -65,10 +86,27 @@ const App = () => {
             return null;
         }
       })()}
-    </div>
-      
-      <h2>Discover</h2>
+    
+          <br/>
+          <hr className="navbar-line" />
+
+          <h2>Discover</h2>
         <Event event={events[0]} />
+      
+          <br/>
+          <hr className="navbar-line" />
+
+
+
+
+
+
+
+
+        </Col>
+      </Row>
+      
+
     </div>
   );
 };

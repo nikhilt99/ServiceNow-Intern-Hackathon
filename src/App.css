@@ -38,14 +38,24 @@
 }
 
 .navbar-img {
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  margin-left: -3%;
 }
 
 .navbar-line {
   margin-top: 2px;
-  border-top: 1px solid #D0D2D3;
+  border-top: 1px solid #d0d2d3;
+}
+
+.sidebar {
+  width: 100%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
