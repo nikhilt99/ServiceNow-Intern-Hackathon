@@ -1,5 +1,6 @@
 .App {
   font-family: Gilroy, sans-serif;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -10,6 +11,7 @@
 h1 {
   color: #474D52;
   font-weight: bold;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
