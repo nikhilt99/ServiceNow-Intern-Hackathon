@@ -4,7 +4,7 @@ import { FiVideo, FiUpload, FiCheck } from "react-icons/fi";
 
 import "./EventCard.css";
 
-const EventCard = () => {
+const EventCard = (props) => {
   return (
     <Card style={{ width: "17rem" }}>
       <Row className="btn-tray">

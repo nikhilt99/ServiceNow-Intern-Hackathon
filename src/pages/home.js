@@ -1,17 +1,16 @@
 import React from "react";
 import Dashboard from "../components/Dashboard/Dashboard";
 import { Row, Col } from "react-bootstrap";
-import EventCard from "../components/EventCard/EventCard";
+import "./index.css"
 
-const Home = () => {
+import EventCard from "../components/EventCard/EventCard";
+import {BsPlus} from 'react-icons/bs'
+
+const Home = (props) => {
   return (
     <>
-      <Dashboard
-        name="Jeffrey Chou"
-        points="375"
-        level="2"
-        teammates="Kenneth Chen, Nikhil Tangella, Jaden Padua"
-      ></Dashboard>
+      <Dashboard name={props.name} points={props.points} level={props.level} teammates={props.teammates}></Dashboard>
+      <button onClick={() => props.addPoints(3)}>add 3 point</button>
 
       <h1>My Events</h1>
 
@@ -28,6 +27,8 @@ const Home = () => {
       </Row>
 
       <Row>
+        <button className="create-event"> <BsPlus/> Create Event</button>
+        <hr />
         <Col md={4}>
           <EventCard />
         </Col>
