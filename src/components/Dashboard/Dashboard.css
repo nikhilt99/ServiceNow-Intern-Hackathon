@@ -1,10 +1,13 @@
+#Dashboard {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
 .profile-card {
   border: 1px #E0E0E0 solid;
   border-top: 7px #CDE0D8 solid;
   border-radius: 3px;
-  padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 3rem;
 }
 
 .profile-flex {
@@ -25,6 +28,7 @@
 
 .profile-flex-right {
   flex-grow: 1;
+  text-align: center;
 }
 
 #point-flex {
@@ -40,12 +44,11 @@ span {
 .profile-img {
   border-radius: 50%;
   height: auto;
-  width: 90%;
+  width: 70%;
 }
 
 #profile-name {
-  font-weight: 600;
-  font-size: 25px;
+  margin-top: 0;
 }
 
 .title {
@@ -60,14 +63,4 @@ span {
 
 .progress-bar {
   background-color: #2A3D40 !important;
-}
-
-#Dashboard {
-  font-family: 'Gilroy';
-  width: 100%;
-
-
-  margin-bottom: 40px;
-  text-align: left;
-  font-size: 14px;
 }

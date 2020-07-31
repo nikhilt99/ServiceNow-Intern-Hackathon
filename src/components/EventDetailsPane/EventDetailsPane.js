@@ -5,7 +5,7 @@ import "./EventDetailsPane.css";
 
 const EventDetailsPane = () => {
   return (
-    <aside className="event-details__container">
+    <aside className="event-details__container shadow">
       <h1 className="event-details__title">UX QE Intern Lunch</h1>
       <p className="event-details__description">
         Come join us at our weekly luncheon with your fellow interns!

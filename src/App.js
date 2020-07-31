@@ -24,29 +24,128 @@ class App extends React.Component {
       points: 112,
       teammates: "Kenneth Chen, Nikhil Tangella, Jaden Padua",
       events: [],
-      discover: []
+      discover: [],
     };
   }
 
   componentDidMount() {
-    this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
-    this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
-    this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
-    this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    this.addEvent(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+    );
+    this.addEvent(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+    );
+    this.addEvent(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+    );
+    this.addEvent(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+    );
 
-    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
-    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
-    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
-    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
-    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
-    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    this.addDiscover(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+    );
+    this.addDiscover(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+    );
+    this.addDiscover(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+    );
+    this.addDiscover(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+    );
+    this.addDiscover(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+    );
+    this.addDiscover(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+    );
   }
 
   addPoints(pointValue) {
     this.setState({ points: this.state.points + pointValue });
   }
 
-  addDiscover(title, description, date, time, duration, participants, points, image) {
+  addDiscover(
+    title,
+    description,
+    date,
+    time,
+    duration,
+    participants,
+    points,
+    image
+  ) {
     var newDiscover = this.state.discover;
     newDiscover.push({
       title: title,
@@ -56,14 +155,23 @@ class App extends React.Component {
       duration: duration,
       participants: participants,
       points: points,
-      image: image
+      image: image,
     });
     this.setState({
-      discover: newDiscover
+      discover: newDiscover,
     });
   }
 
-  addEvent(title, description, date, time, duration, participants, points, image) {
+  addEvent(
+    title,
+    description,
+    date,
+    time,
+    duration,
+    participants,
+    points,
+    image
+  ) {
     var newEvents = this.state.events;
     newEvents.push({
       title: title,
@@ -73,7 +181,7 @@ class App extends React.Component {
       duration: duration,
       participants: participants,
       points: points,
-      image: image
+      image: image,
     });
     this.setState({
       events: newEvents,
@@ -90,22 +198,40 @@ class App extends React.Component {
           </Col>
           <Col md={7}>
             <Switch>
-              <Route exact render={(routeProps) => (
-                <Home {...routeProps}
-                  addEvent={this.addEvent}
-                  addPoints={this.addPoints}
-                  name={this.state.name}
-                  points={this.state.points}
-                  teammates={this.state.teammates}
-                  events={this.state.events}></Home>
-              )} path="/home"></Route>
-              <Route exact render={(routeProps) => (
-                <Events {...routeProps} addPoints={this.addPoints} events={this.state.discover} ></Events>
-              )} path="/events"></Route>
+              <Route
+                exact
+                render={(routeProps) => (
+                  <Home
+                    {...routeProps}
+                    addEvent={this.addEvent}
+                    addPoints={this.addPoints}
+                    name={this.state.name}
+                    points={this.state.points}
+                    teammates={this.state.teammates}
+                    events={this.state.events}
+                  ></Home>
+                )}
+                path="/home"
+              ></Route>
+              <Route
+                exact
+                render={(routeProps) => (
+                  <Events
+                    {...routeProps}
+                    addPoints={this.addPoints}
+                    events={this.state.discover}
+                  ></Events>
+                )}
+                path="/events"
+              ></Route>
               <Route exact component={Points} path="/points"></Route>
-              <Route exact render={(routeProps) => (
-                <Forms {...routeProps} addEvent={this.addEvent}></Forms>
-              )} path="/form"></Route>
+              <Route
+                exact
+                render={(routeProps) => (
+                  <Forms {...routeProps} addEvent={this.addEvent}></Forms>
+                )}
+                path="/form"
+              ></Route>
             </Switch>
           </Col>
           <Col>
