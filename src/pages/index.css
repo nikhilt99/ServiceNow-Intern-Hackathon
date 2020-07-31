@@ -1,0 +1,15 @@
+.create-event {
+    background-color: #546566;
+    color: white;
+    font-family: 'Gilroy';
+    width: 160px;
+    outline: none;
+    border-color: #546566;
+    background: #546566;
+    padding: 0;
+    border: none;
+    background: #546566;
+    height: 35px;
+    font-size: 18px;
+    line-height: 10px;
+}

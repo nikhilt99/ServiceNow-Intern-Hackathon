@@ -1,5 +1,6 @@
 import React from "react";
 import Dashboard from "../components/Dashboard/Dashboard";
+import "./index.css"
 import {
   Nav,
   NavDropdown,
@@ -10,6 +11,7 @@ import {
   Col,
 } from "react-bootstrap";
 import EventCard from "../components/EventCard/EventCard";
+import {BsPlus} from 'react-icons/bs'
 
 const Home = (props) => {
   return (
@@ -31,7 +33,10 @@ const Home = (props) => {
 
       <Row>
         <Col>
-          <EventCard />
+        <button className="create-event"> <BsPlus/> Create Event</button>
+        <hr></hr>
+        <EventCard/>
+      
         </Col>
       </Row>
     </div >
