@@ -1,4 +1,4 @@
-Social-NOW
+# Social-NOW
 
 Social-NOW is a team bonding app where employees can level up and gain points from attending social events
 organized by their manager or ServiceNow as a whole. In a time where we are all at home during quantine, Social-NOW
