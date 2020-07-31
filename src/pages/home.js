@@ -1,6 +1,7 @@
 import React from "react";
 import Dashboard from "../components/Dashboard/Dashboard";
 import "./index.css"
+import { Link } from 'react-router-dom'
 import {
   Nav,
   NavDropdown,
@@ -33,7 +34,10 @@ const Home = (props) => {
 
       <Row>
         <Col>
-        <button className="create-event"> <BsPlus/> Create Event</button>
+        <Link to="/form">
+            <button className="create-event"><BsPlus/> Create Event
+            </button>
+        </Link>
         <hr></hr>
         <EventCard/>
       
