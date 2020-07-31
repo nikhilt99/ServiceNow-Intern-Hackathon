@@ -1,9 +1,11 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import { Row, Col } from "react-bootstrap";
 import "./App.css";
+
 import { events } from "./utils";
-import navbar from "./assets/navbar.png";
-import Navbar from "./components/Navbar/Navbar"
+import Navbar from "./components/Navbar/Navbar";
+import EventDetailsPane from "./components/EventDetailsPane/EventDetailsPane";
 
 import Home from "./pages/home";
 import Events from "./pages/events";
@@ -11,13 +13,7 @@ import Points from "./pages/points";
 import Topbar from "./components/Topbar/Topbar";
 import Forms from "./pages/forms";
 
-import { Row, Col } from "react-bootstrap";
-
-import "./App.css";
-
 class App extends React.Component {
-
-
   constructor(props) {
     super(props);
     this.addEvent = this.addEvent.bind(this);
@@ -26,12 +22,20 @@ class App extends React.Component {
       name: "Jeffrey Chou",
       points: 12312,
       teammates: "Kenneth Chen, Nikhil Tangella, Jaden Padua",
-      events: []
+      events: [],
     };
   }
 
   componentDidMount() {
-    this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3);
+    this.addEvent(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3
+    );
   }
 
   addPoints(pointValue) {
@@ -47,16 +51,16 @@ class App extends React.Component {
       time: time,
       duration: duration,
       participants: participants,
-      points: points
+      points: points,
     });
     this.setState({
-      events: newEvents
+      events: newEvents,
     });
   }
 
   render() {
     return (
-      <div className="App" >
+      <div className="App">
         <Topbar></Topbar>
         <Row>
           <Col sm={2}>
@@ -64,21 +68,31 @@ class App extends React.Component {
           </Col>
           <Col md={7}>
             <Switch>
-              <Route exact render={(routeProps) => (
-                <Home {...routeProps} addEvent={this.addEvent} addPoints={this.addPoints} name={this.state.name} points={this.state.points} teammates={this.state.teammates} events={this.state.events}></Home>
-              )} path="/home"></Route>
+              <Route
+                exact
+                render={(routeProps) => (
+                  <Home
+                    {...routeProps}
+                    addEvent={this.addEvent}
+                    addPoints={this.addPoints}
+                    name={this.state.name}
+                    points={this.state.points}
+                    teammates={this.state.teammates}
+                    events={this.state.events}
+                  ></Home>
+                )}
+                path="/home"
+              ></Route>
               <Route exact component={Events} path="/events"></Route>
               <Route exact component={Points} path="/points"></Route>
               <Route exact component={Forms} path="/form"></Route>
             </Switch>
           </Col>
           <Col>
-            <div
-              style={{ width: "100%", height: "1000%", backgroundColor: "red" }}
-            />
+            <EventDetailsPane />
           </Col>
         </Row>
-      </div >
+      </div>
     );
   }
 }
