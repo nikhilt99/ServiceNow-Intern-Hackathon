@@ -4,10 +4,8 @@ Social-NOW is a team bonding app where employees can level up and gain points fr
 organized by their manager or ServiceNow as a whole. In a time where we are all at home during quantine, Social-NOW
 provides teams with an incentive to grow and and interact together through a simple and intuitive event / reward system.
 
-![Social-NOW Diagram](./assets/diagram.png "Social-NOW Demo Diagram")
-
 ### Background
-TThe average person spends 90,000 hours at work in their lifetime:
+The average person spends 90,000 hours at work in their lifetime:
 *	Making work , work better for people includes giving teams the opportunity to connect and socialize with one another
 *	Especially during quarantine, the need for social interaction is greater than ever
 *   Making work , work better for people includes giving teams the opportunity to connect and socialize with one another
