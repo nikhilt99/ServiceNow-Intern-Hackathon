@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { BsPlus } from "react-icons/bs";
+import { FiPlus } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import "./index.css";
 
@@ -44,6 +44,12 @@ class Home extends React.Component {
 
           <h1>My Events</h1>
 
+          <Link to="/form">
+            <button className="create-event float-right">
+              <FiPlus /> Create Event
+      </button>
+          </Link>
+
           <Row className="my-event-tabs">
 
             <Col md="auto">
@@ -55,11 +61,6 @@ class Home extends React.Component {
             <Col md="auto">
               <p>All</p>
             </Col>
-
-            <Link to="/form">
-              <button className="create-event"><BsPlus /> Create Event
-            </button>
-            </Link>
 
           </Row>
           <Row>
@@ -80,6 +81,6 @@ class Home extends React.Component {
       </Row>
     );
   }
-};
+}
 
 export default Home;

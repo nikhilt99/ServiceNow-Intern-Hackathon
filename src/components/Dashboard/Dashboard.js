@@ -11,7 +11,7 @@ const Dashboard = (props) => {
       <div className="profile-card">
         <div className="profile-flex">
           <div className="profile-flex-left">
-            <div id="profile-name">{props.name}</div>
+            <h2 id="profile-name">{props.name}</h2>
             <div className="point-bar">
               <div id="point-flex">
                 <div>
