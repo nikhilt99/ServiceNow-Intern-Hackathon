@@ -7,20 +7,20 @@ const Forms = () => {
       <Form>
         <Form.Group controlId="formTitle">
           <Form.Label>Title</Form.Label>
-          <Form.Control type="email" placeholder="Enter title for event" />
+          <Form.Control type="text" placeholder="Enter title for event" />
           <Form.Text className="text-muted"></Form.Text>
         </Form.Group>
 
         <Form.Group controlId="formDescription">
           <Form.Label>Description</Form.Label>
-          <Form.Control type="email" placeholder="Enter event description" />
+          <Form.Control type="text" placeholder="Enter event description" />
           <Form.Text className="text-muted"></Form.Text>
         </Form.Group>
 
         <Form.Group controlId="formDate">
           <Form.Label>Event Date</Form.Label>
           <Form.Control
-            type="email"
+            type="text"
             placeholder="Enter date event will take place"
           />
           <Form.Text className="text-muted"></Form.Text>
@@ -29,7 +29,7 @@ const Forms = () => {
         <Form.Group controlId="formTime">
           <Form.Label>Event Time</Form.Label>
           <Form.Control
-            type="email"
+            type="text"
             placeholder="Enter time event will take place"
           />
           <Form.Text className="text-muted"></Form.Text>
@@ -37,14 +37,14 @@ const Forms = () => {
 
         <Form.Group controlId="formDuration">
           <Form.Label>Duration</Form.Label>
-          <Form.Control type="email" placeholder="Enter duration of event" />
+          <Form.Control type="text" placeholder="Enter duration of event" />
           <Form.Text className="text-muted"></Form.Text>
         </Form.Group>
 
         <Form.Group controlId="formParticipants">
           <Form.Label>Participants</Form.Label>
           <Form.Control
-            type="email"
+            type="text"
             placeholder="Enter the emails of your event participants"
           />
           <Form.Text className="text-muted">
@@ -55,7 +55,7 @@ const Forms = () => {
         <Form.Group controlId="formPointValue">
           <Form.Label>Point Value</Form.Label>
           <Form.Control
-            type="email"
+            type="text"
             placeholder="Enter point value you believe this event should be worth"
           />
           <Form.Text className="text-muted"></Form.Text>
