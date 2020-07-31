@@ -13,6 +13,9 @@ class Home extends React.Component {
     super(props);
     this.showEventPane = this.showEventPane.bind(this);
     this.state = {
+      showPast: false,
+      showUpcoming: true,
+      showAll: false,
       showEventPane: false,
       title: "",
       description: "",
@@ -21,6 +24,30 @@ class Home extends React.Component {
       duration: "",
       points: 0,
     };
+  }
+
+  showPast() {
+    this.setState({
+      showPast: true,
+      showAll: false,
+      showUpcoming: false
+    });
+  }
+
+  showUpcoming() {
+    this.setState({
+      showUpcoming: true,
+      showPast: false,
+      showAll: false
+    });
+  }
+
+  showAll() {
+    this.setState({
+      showAll: true,
+      showUpcoming: false,
+      showPast: false
+    })
   }
 
   showEventPane(title, description, date, time, duration, points) {
@@ -37,7 +64,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <Row>
+      <Row id="large-row">
         <Col sm={8}>
           <Dashboard
             name={this.props.name}
@@ -55,35 +82,87 @@ class Home extends React.Component {
           <h1>My Events</h1>
 
           <Row className="my-event-tabs">
-            <Col md="auto">
-              <p className="active">Upcoming</p>
+            <Col md="auto" >
+              <p onClick={() => this.showUpcoming()} className={this.state.showUpcoming ? 'active' : ''}>Upcoming</p>
             </Col>
             <Col md="auto">
-              <p>Past</p>
+              <p onClick={() => this.showPast()} className={this.state.showPast ? 'active' : ''}>Past</p>
             </Col>
             <Col md="auto">
-              <p>All</p>
+              <p onClick={() => this.showAll()} className={this.state.showAll ? 'active' : ''}>All</p>
             </Col>
           </Row>
-          <Row>
-            {this.props.events.map((event, i) => {
-              return (
-                <Col md="4" key={i} className="mb-3">
-                  <EventCard
-                    showEventPane={this.showEventPane}
-                    addPoints={this.props.addPoints}
-                    title={event.title}
-                    description={event.description}
-                    date={event.date}
-                    time={event.time}
-                    duration={event.duration}
-                    image={event.image}
-                    points={event.points}
-                  />
-                </Col>
-              );
-            })}
-          </Row>
+          {
+            this.state.showUpcoming && (
+              <Row>
+                {this.props.events.map((event, i) => {
+                  return (
+                    <Col md="4" key={i} className="mb-3">
+                      <EventCard
+                        showEventPane={this.showEventPane}
+                        addPoints={this.props.addPoints}
+                        title={event.title}
+                        description={event.description}
+                        date={event.date}
+                        time={event.time}
+                        duration={event.duration}
+                        image={event.image}
+                        points={event.points}
+                      />
+                    </Col>
+                  );
+                })}
+              </Row>
+            )
+          }
+
+          {
+            this.state.showAll && (
+              <Row>
+                {this.props.all.map((event, i) => {
+                  return (
+                    <Col md="4" key={i} className="mb-3">
+                      <EventCard
+                        showEventPane={this.showEventPane}
+                        addPoints={this.props.addPoints}
+                        title={event.title}
+                        description={event.description}
+                        date={event.date}
+                        time={event.time}
+                        duration={event.duration}
+                        image={event.image}
+                        points={event.points}
+                      />
+                    </Col>
+                  );
+                })}
+              </Row>
+            )
+          }
+
+          {
+            this.state.showPast && (
+              <Row>
+                {this.props.past.map((event, i) => {
+                  return (
+                    <Col md="4" key={i} className="mb-3">
+                      <EventCard
+                        showEventPane={this.showEventPane}
+                        addPoints={this.props.addPoints}
+                        title={event.title}
+                        description={event.description}
+                        date={event.date}
+                        time={event.time}
+                        duration={event.duration}
+                        image={event.image}
+                        points={event.points}
+                      />
+                    </Col>
+                  );
+                })}
+              </Row>
+            )
+          }
         </Col>
         <Col sm={4}>
           {this.state.showEventPane && (
@@ -97,7 +176,7 @@ class Home extends React.Component {
             />
           )}
         </Col>
-      </Row>
+      </Row >
     );
   }
 }

@@ -76,10 +76,12 @@ const EventCard = (props) => {
             })}
           </Col>
           <Col md="auto">
-            <Button variant="primary btn-join">
-              <FiVideo className="fi-video-icon" />
+            <a href="https://servicenow.zoom.us">
+              <Button variant="primary btn-join">
+                <FiVideo className="fi-video-icon" />
               Join
             </Button>
+            </a>
           </Col>
         </Row>
       </Card.Body>

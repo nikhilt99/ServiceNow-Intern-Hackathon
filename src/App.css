@@ -8,7 +8,9 @@
   pointer-events: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #474D52;
   font-weight: bold;
   margin-top: 2rem;

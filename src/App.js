@@ -25,6 +25,8 @@ class App extends React.Component {
       teammates: "Kenneth Chen, Nikhil Tangella, Jaden Padua",
       events: [],
       discover: [],
+      past: [],
+      all: []
     };
   }
 
@@ -32,7 +34,7 @@ class App extends React.Component {
     this.addEvent(
       "Intern Coffee Chat",
       "Stir up some friendships!",
-      "Mon, Jul 8, 2020",
+      "Mon, August 15, 2020",
       "12:00 PM PST",
       "1 hour 30min",
       3,
@@ -42,7 +44,7 @@ class App extends React.Component {
     this.addEvent(
       "Summer Coach",
       "Meet and greet!",
-      "Mon, Jun 29, 2020",
+      "Mon, August 23, 2020",
       "10:30 AM PST",
       "1 hours",
       3,
@@ -52,7 +54,7 @@ class App extends React.Component {
     this.addEvent(
       "Exec Speaker Series",
       "Learn and grow with us!",
-      "Tue, Jun 23, 2020",
+      "Tue, December 1, 2020",
       "12:00 PM PST",
       "1 hour",
       3,
@@ -60,7 +62,7 @@ class App extends React.Component {
       "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
 
-    this.addEvent(
+    this.addPast(
       "Intern Orientation",
       "Welcome aboard!",
       "Mon, Jun 22, 2020",
@@ -70,7 +72,8 @@ class App extends React.Component {
       3,
       "https://images.unsplash.com/photo-1580191947416-62d35a55e71d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
     );
-   this.addDiscover(
+
+    this.addDiscover(
       "Talent Show",
       "Show us what you got!",
       "Fri, Sep 23, 2020",
@@ -80,7 +83,7 @@ class App extends React.Component {
       3,
       "https://images.unsplash.com/photo-1565798846807-2af22c843402?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
-  
+
     this.addDiscover(
       "Game Night",
       "Calling all gamers",
@@ -159,7 +162,45 @@ class App extends React.Component {
       image: image,
     });
     this.setState({
-      discover: newDiscover,
+      discover: newDiscover
+    });
+  }
+
+  addPast(
+    title,
+    description,
+    date,
+    time,
+    duration,
+    participants,
+    points,
+    image
+  ) {
+    var newPast = this.state.past;
+    newPast.push({
+      title: title,
+      description: description,
+      date: date,
+      time: time,
+      duration: duration,
+      participants: participants,
+      points: points,
+      image: image,
+    });
+    var newAll = this.state.all;
+    newAll.push({
+      title: title,
+      description: description,
+      date: date,
+      time: time,
+      duration: duration,
+      participants: participants,
+      points: points,
+      image: image,
+    });
+    this.setState({
+      past: newPast,
+      all: newAll
     });
   }
 
@@ -184,8 +225,20 @@ class App extends React.Component {
       points: points,
       image: image,
     });
+    var newAll = this.state.all;
+    newAll.push({
+      title: title,
+      description: description,
+      date: date,
+      time: time,
+      duration: duration,
+      participants: participants,
+      points: points,
+      image: image,
+    });
     this.setState({
       events: newEvents,
+      all: newAll
     });
   }
 
@@ -210,6 +263,8 @@ class App extends React.Component {
                     points={this.state.points}
                     teammates={this.state.teammates}
                     events={this.state.events}
+                    past={this.state.past}
+                    all={this.state.all}
                   ></Home>
                 )}
                 path="/home"

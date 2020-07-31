@@ -4,7 +4,7 @@
 }
 
 .top-bar {
-  height: 85px;
+  height: 95px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   font-family: Gilroy;
-  font-size: 27px;
+  font-size: 28px;
   font-weight: 600;
 }
 
