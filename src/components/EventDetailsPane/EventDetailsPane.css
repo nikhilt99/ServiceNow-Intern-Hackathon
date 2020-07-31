@@ -3,6 +3,7 @@
     background-color: #F8F7FA;
     border-left: 10px solid #CDE0D8;
     position: fixed;
+    width: 100%;
 }
 
 .event-details__title {

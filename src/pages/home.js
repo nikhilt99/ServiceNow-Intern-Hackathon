@@ -8,7 +8,6 @@ import Dashboard from "../components/Dashboard/Dashboard";
 import EventCard from "../components/EventCard/EventCard";
 import EventDetailsPane from "../components/EventDetailsPane/EventDetailsPane";
 
-
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +19,7 @@ class Home extends React.Component {
       date: "",
       time: "",
       duration: 0,
-      points: 0
+      points: 0,
     };
   }
 
@@ -32,26 +31,30 @@ class Home extends React.Component {
       date: date,
       time: time,
       duration: duration,
-      points: points
+      points: points,
     });
   }
 
   render() {
     return (
       <Row>
-        <Col sm={6}>
-          <Dashboard name={this.props.name} points={this.props.points} level={this.props.level} teammates={this.props.teammates}></Dashboard>
+        <Col sm={8}>
+          <Dashboard
+            name={this.props.name}
+            points={this.props.points}
+            level={this.props.level}
+            teammates={this.props.teammates}
+          ></Dashboard>
+
+          <Link to="/form" className="float-right">
+            <button className="create-event">
+              <FiPlus /> Create Event
+            </button>
+          </Link>
 
           <h1>My Events</h1>
 
-          <Link to="/form">
-            <button className="create-event float-right">
-              <FiPlus /> Create Event
-      </button>
-          </Link>
-
           <Row className="my-event-tabs">
-
             <Col md="auto">
               <p className="active">Upcoming</p>
             </Col>
@@ -61,22 +64,37 @@ class Home extends React.Component {
             <Col md="auto">
               <p>All</p>
             </Col>
-
           </Row>
           <Row>
-            {
-              this.props.events.map(event => {
-                return (
-                  <Col md="4">
-                    <EventCard showEventPane={this.showEventPane} addPoints={this.props.addPoints} title={event.title} description={event.description} date={event.date} time={event.time} image={event.image} points={event.points} />
-                  </Col>
-                )
-              })
-            }
+            {this.props.events.map((event, i) => {
+              return (
+                <Col md="4" key={i} className="mb-3">
+                  <EventCard
+                    showEventPane={this.showEventPane}
+                    addPoints={this.props.addPoints}
+                    title={event.title}
+                    description={event.description}
+                    date={event.date}
+                    time={event.time}
+                    image={event.image}
+                    points={event.points}
+                  />
+                </Col>
+              );
+            })}
           </Row>
         </Col>
         <Col sm={4}>
-          {this.state.showEventPane && <EventDetailsPane title={this.state.title} description={this.state.description} date={this.state.date} time={this.state.time} duration={this.state.duration} points={this.state.points} />}
+          {this.state.showEventPane && (
+            <EventDetailsPane
+              title={this.state.title}
+              description={this.state.description}
+              date={this.state.date}
+              time={this.state.time}
+              duration={this.state.duration}
+              points={this.state.points}
+            />
+          )}
         </Col>
       </Row>
     );

@@ -6,7 +6,7 @@ import "./EventCard.css";
 
 const EventCard = (props) => {
   return (
-    <Card onClick={() => props.showEventPane(props.title, props.description, props.date, props.time, props.duration, props.points)} style={{ width: "17rem" }}>
+    <Card onClick={() => props.showEventPane(props.title, props.description, props.date, props.time, props.duration, props.points)} style={{ width: "15rem" }}>
       <Row className="btn-tray">
         <Col md="auto">
           <Button variant="light" className="btn-event-action rounded-circle">
