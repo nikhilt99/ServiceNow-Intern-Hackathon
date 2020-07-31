@@ -24,15 +24,11 @@ class App extends React.Component {
       points: 112,
       teammates: "Kenneth Chen, Nikhil Tangella, Jaden Padua",
       events: [],
-<<<<<<< HEAD
       discover: []
-=======
->>>>>>> d997e018c6737f4602b57bb343088a52340f8828
     };
   }
 
   componentDidMount() {
-<<<<<<< HEAD
     this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
     this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
     this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
@@ -44,17 +40,6 @@ class App extends React.Component {
     this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
     this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
     this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
-=======
-    this.addEvent(
-      "test event",
-      "description",
-      "10/10/2020",
-      "9:00 - 10:00",
-      "1 hour",
-      3,
-      3
-    );
->>>>>>> d997e018c6737f4602b57bb343088a52340f8828
   }
 
   addPoints(pointValue) {
@@ -74,7 +59,7 @@ class App extends React.Component {
       image: image
     });
     this.setState({
-      discoer: newDiscover
+      discover: newDiscover
     });
   }
 
