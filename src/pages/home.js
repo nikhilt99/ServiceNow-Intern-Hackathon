@@ -11,7 +11,7 @@ import {
   Col,
 } from "react-bootstrap";
 import EventCard from "../components/EventCard/EventCard";
-import {BsPlus} from 'react-icons/bs'
+import { BsPlus } from 'react-icons/bs'
 
 const Home = (props) => {
   return (
@@ -30,14 +30,17 @@ const Home = (props) => {
           <p>All</p>
         </Col>
       </Row>
-
+      <button className="create-event"> <BsPlus /> Create Event</button>
       <Row>
-        <Col>
-        <button className="create-event"> <BsPlus/> Create Event</button>
-        <hr></hr>
-        <EventCard/>
-      
-        </Col>
+        {
+          props.events.map(event => {
+            return (
+              <Col>
+                <EventCard title={event.title} description={event.description} date={event.date} time={event.time} />
+              </Col>
+            )
+          })
+        }
       </Row>
     </div >
   );

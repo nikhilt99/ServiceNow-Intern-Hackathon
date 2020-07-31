@@ -1,0 +1,48 @@
+#icon img {
+  height: 23px;
+  width: auto;
+}
+
+.top-bar {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #D0D2D3 1px solid;
+  margin-bottom: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#icon {
+  display: flex;
+  align-items: center;
+  font-family: Gilroy;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+#icon div {
+  margin-left: 25px;
+  padding-left: 25px;
+  border-left: #C4C4C4 3px solid;
+}
+
+#icon input {
+  margin-left: 30px;
+  border-radius: 2px;
+  padding: 10px;
+  padding-left: 20px;
+  height: 35px;
+  width: 250px;
+  border: none;
+  background-color: #F8F7FA;
+  font-size: 15px;
+  color: #A9A7B3;
+}
+
+#profile-top {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}

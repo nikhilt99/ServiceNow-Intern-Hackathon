@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Home from "./pages/home";
 import Events from "./pages/events";
 import Points from "./pages/points";
+import Topbar from "./components/Topbar/Topbar";
 
 import Dashboard from "./components/Dashboard/Dashboard";
 import sidebar from "./assets/sidebar.png";
@@ -65,8 +66,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App" >
-        <img className="navbar-img" src={navbar} alt="Navbar" />
-        <hr className="navbar-line" />
+        <Topbar></Topbar>
         <Row>
           <Col sm={2}>
             <Navbar></Navbar>

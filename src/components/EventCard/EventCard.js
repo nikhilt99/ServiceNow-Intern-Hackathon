@@ -21,11 +21,9 @@ const EventCard = (props) => {
       </Row>
       <Card.Img variant="top" src="https://source.unsplash.com/random" />
       <Card.Body className="pt-5">
-        <Card.Subtitle>Tue, Aug 4, 2020 12:30 AM PST</Card.Subtitle>
-        <Card.Title>UX QE Intern Lunch</Card.Title>
-        <Card.Text>
-          Come join us at our weekly luncheon with your fellow interns!
-        </Card.Text>
+        <Card.Subtitle>{props.date + props.time}</Card.Subtitle>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.description} </Card.Text>
         <Row className="align-items-center">
           <Col as={Row}>
             {["#EB5757", "#20CE99", "#777777"].map((backgroundColor, i) => {
