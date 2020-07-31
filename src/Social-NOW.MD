@@ -21,11 +21,13 @@ Transforming the social workflow with Social-NOW!
 
 ### User Stories:
 
-A list of user input and use cases regarding the improvements and benefits of EasyScript
-*	(Systems Engineer) : As a Systems Engineer, I would like a feature where I can view the running script’s output in the same window on top of a download .js format feature. This would allow for easier script execution and visualization. 
-* (Software Development Engineer): As a Software Development Engineer, I would like an integrated on platform text editor where I can easily test and compile my code.
-*	(Software Quality Engineer) : As a Software Quality Engineer, I would like a feature that would allow for syntax highlighting, checking, and autocomplete. This would allow for me to catch compilation issues before they occur, which would help in the debugging process. 
-
+A list of user input and use cases regarding the improvements and benefits of Social-NOW
+*	(Systems Engineer) : As a Systems Engineer I would like an all encompassing platform where I can interact at socials
+and tkae away the stresses of work through a cool team bonding app
+* (Software Development Engineer): As a Software Development Engineer, I would like an integrated on platform solution to where
+I can arrange meetups and arrangements with my fellow peers regarding my times that I would like to socialize.
+*	(Software Quality Engineer) : As a Software Quality Engineer, I would like a platform application where I can find incentive
+to these kinds of events and make it in a very fun way and matter, something with lots of UI/UX!s
 ### High Level Overview:
  
 #### Phase 1:
