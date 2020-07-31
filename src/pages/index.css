@@ -1,4 +1,96 @@
 .create-event {
+
+  background-color: #546566;
+  color: white;
+  font-family: "Gilroy";
+  width: 160px;
+  outline: none;
+  border-color: #546566;
+  background: #546566;
+  padding: 0;
+  border: none;
+  background: #546566;
+  height: 35px;
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.square1 {
+  border: 1px #e0e0e0 solid;
+  border-top: 7px #cde0d8 solid;
+  border-radius: 3px;
+}
+.square2 {
+  border: 1px #e0e0e0 solid;
+  border-top: 7px #cde0d8 solid;
+  border-radius: 3px;
+}
+
+.square3 {
+  border: 1px #e0e0e0 solid;
+  border-top: 7px #cde0d8 solid;
+  border-radius: 3px;
+}
+
+.square4 {
+    border: 1px #e0e0e0 solid;
+    border-left: 7px #cde0d8 solid;
+    border-radius: 3px;
+    height: 50px;
+  }
+  
+
+
+.profile-img1 {
+  border-radius: 50%;
+  height: 5px;
+  width: 40%;
+  margin-right: 500px;
+}
+
+.profile-img2 {
+    border-radius: 50%;
+    height: 5px;
+    width: 40%;
+    margin-top: -90px;
+    margin-left: 140px;
+}
+
+.center-h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.center-h3-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.leaderboard {
+  margin-left: -17px;
+}
+
+.number {
+  font-weight: bold;
+}
+
+.number2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.name-2 {
+    margin-top: -66px;
+    margin-left: 362px;
+}
+
+.points-2 {
+    margin-top: -40px;
+    margin-left: 687px;
+
     background-color: #546566;
     color: white;
     font-family: 'Gilroy';
@@ -16,4 +108,5 @@
 
 label {
     font-weight: 500;
+
 }
