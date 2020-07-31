@@ -1,0 +1,28 @@
+.event-details__container {
+    padding: 2rem;
+    background-color: #F8F7FA;
+    border-left: 10px solid #CDE0D8;
+    position: fixed;
+}
+
+.event-details__title {
+    font-size: 1.7rem;
+}
+
+.event-details__description {
+    color: #828282;
+    font-weight: 500;
+}
+
+.event-details__field-name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #828282;
+    margin-bottom: .5rem;
+}
+
+.event-details__field-value {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2A3D40;
+}
