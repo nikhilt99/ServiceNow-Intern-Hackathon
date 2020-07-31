@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Home from "./pages/home";
 import Events from "./pages/events";
 import Points from "./pages/points";
+import Topbar from "./components/Topbar/Topbar";
 import Forms from "./pages/forms";
 
 import { Row, Col } from "react-bootstrap";
@@ -56,9 +57,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App" >
-        <img className="navbar-img" src={navbar} alt="Navbar" />
-        <hr className="navbar-line" />
-        <Row className="mb-4">
+        <Topbar></Topbar>
+        <Row>
           <Col sm={2}>
             <Navbar />
           </Col>

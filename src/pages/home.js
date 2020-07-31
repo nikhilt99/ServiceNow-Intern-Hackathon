@@ -6,6 +6,8 @@ import "./index.css";
 
 import Dashboard from "../components/Dashboard/Dashboard";
 import EventCard from "../components/EventCard/EventCard";
+import { BsPlus } from 'react-icons/bs'
+
 
 const Home = (props) => {
   return (
@@ -26,14 +28,26 @@ const Home = (props) => {
           <p>All</p>
         </Col>
       </Row>
-
+      <button className="create-event"> <BsPlus /> Create Event</button>
       <Row>
-        <Link to="/form">
-          <button className="create-event"><BsPlus/> Create Event</button>
-        </Link>
-        <hr />
-        <Col md={4}>
+
+        {
+          props.events.map(event => {
+            return (
+              <Col>
+                <EventCard title={event.title} description={event.description} date={event.date} time={event.time} />
+              </Col>
+            )
+          })
+        }
+        <Col>
+          <Link to="/form">
+            <button className="create-event"><BsPlus /> Create Event
+            </button>
+          </Link>
+          <hr></hr>
           <EventCard />
+
         </Col>
       </Row>
     </>
