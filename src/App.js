@@ -61,7 +61,7 @@ class App extends React.Component {
     );
     this.addEvent(
       "test event",
-      "description",
+      "descriptiondesc riptiondescriptio  ndescriptiondescriptiondescriptionde scriptiondescr iptiondescr iptiondescriptionde scriptiondes criptiondescriptiondescription",
       "10/10/2020",
       "9:00 - 10:00",
       "1 hour",
@@ -82,7 +82,7 @@ class App extends React.Component {
     );
     this.addDiscover(
       "test event",
-      "description",
+      "descriptiondesc riptiondescriptio  ndescriptiondescriptiondescriptionde scriptiondescr iptiondescr iptiondescriptionde scriptiondes criptiondescriptiondescription",
       "10/10/2020",
       "9:00 - 10:00",
       "1 hour",

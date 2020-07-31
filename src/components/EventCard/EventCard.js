@@ -21,7 +21,7 @@ const EventCard = (props) => {
       </Row>
       <Card.Img variant="top" src={props.image} />
       <Card.Body className="pt-5">
-        <Card.Subtitle>{props.date + props.time}</Card.Subtitle>
+        <Card.Subtitle>{props.date + " " + props.time}</Card.Subtitle>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.description} </Card.Text>
         <Row className="align-items-center">

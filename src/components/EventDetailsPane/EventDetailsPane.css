@@ -1,9 +1,16 @@
 .event-details__container {
+    margin-top: 65px;
+    border-radius: 3px;
     padding: 2rem;
     background-color: #F8F7FA;
-    border-left: 10px solid #CDE0D8;
+    border-left: 7px #CDE0D8 solid;
     position: fixed;
     width: 100%;
+}
+
+p {
+    word-break: break-all;
+    white-space: normal;
 }
 
 .event-details__title {
