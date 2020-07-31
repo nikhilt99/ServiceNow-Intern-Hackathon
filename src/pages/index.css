@@ -1,4 +1,5 @@
 .create-event {
+
   background-color: #546566;
   color: white;
   font-family: "Gilroy";
@@ -89,4 +90,23 @@
 .points-2 {
     margin-top: -40px;
     margin-left: 687px;
+
+    background-color: #546566;
+    color: white;
+    font-family: 'Gilroy';
+    width: 160px;
+    outline: none;
+    border-color: #546566;
+    background: #546566;
+    padding: 0;
+    border: none;
+    height: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+label {
+    font-weight: 500;
+
 }

@@ -6,7 +6,7 @@ import "./EventCard.css";
 
 const EventCard = (props) => {
   return (
-    <Card style={{ width: "17rem" }}>
+    <Card onClick={() => props.showEventPane(props.title, props.description, props.date, props.time, props.duration, props.points)} style={{ width: "17rem" }}>
       <Row className="btn-tray">
         <Col md="auto">
           <Button variant="light" className="btn-event-action rounded-circle">
@@ -14,12 +14,12 @@ const EventCard = (props) => {
           </Button>
         </Col>
         <Col md="auto">
-          <Button variant="light" className="btn-event-action rounded-circle">
+          <Button onClick={() => props.addPoints(props.points)} variant="light" className="btn-event-action rounded-circle">
             <FiCheck />
           </Button>
         </Col>
       </Row>
-      <Card.Img variant="top" src="https://source.unsplash.com/random" />
+      <Card.Img variant="top" src={props.image} />
       <Card.Body className="pt-5">
         <Card.Subtitle>{props.date + props.time}</Card.Subtitle>
         <Card.Title>{props.title}</Card.Title>

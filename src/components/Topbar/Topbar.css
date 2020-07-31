@@ -10,7 +10,7 @@
   align-items: center;
   border-bottom: #D0D2D3 1px solid;
   margin-bottom: 30px;
-  padding-left: 80px;
+  padding-left: 115px;
   padding-right: 80px;
 }
 
@@ -18,8 +18,8 @@
   display: flex;
   align-items: center;
   font-family: Gilroy;
-  font-size: 23px;
-  font-weight: 500;
+  font-size: 27px;
+  font-weight: 600;
 }
 
 #icon div {
