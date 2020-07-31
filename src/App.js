@@ -62,6 +62,31 @@ class App extends React.Component {
       "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
 
+
+
+    this.addPast(
+      "Smash Tournament",
+      "Let's get smashing!",
+      "Mon, Jul 30, 2020",
+      "2:00 PM PST",
+      "1 hour 30 min",
+      3,
+      20,
+      "https://images.unsplash.com/photo-1566576912289-cc48894ec413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    );
+
+
+    this.addPast(
+      "Intern Tech Talk",
+      "Learn with other interns!",
+      "Mon, Jun 29, 2020",
+      "12:00 PM PST",
+      "1 hour 30 min",
+      3,
+      15,
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    );
+
     this.addPast(
       "Intern Orientation",
       "Welcome aboard!",
@@ -69,9 +94,12 @@ class App extends React.Component {
       "9:00 AM PST",
       "5 hours",
       3,
-      3,
+      25,
       "https://images.unsplash.com/photo-1580191947416-62d35a55e71d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
     );
+
+
+
 
     this.addDiscover(
       "Talent Show",

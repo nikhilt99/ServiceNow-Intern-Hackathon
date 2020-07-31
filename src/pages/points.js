@@ -60,14 +60,14 @@ const Points = () => {
         </Col>
       </Row>
 
-      <Row>
+        <Row>
         <Col className="square4 " style={{ marginTop: 30 }}>
           <div className="flex-rectangle">
             <div className="flex-rect-left">
               <h3>4</h3>
               <div>Kenneth Chen</div>
             </div>
-            <div>Social points: <span>8000</span> </div>
+            <div>Social points: <span>8287</span> </div>
           </div>
         </Col>
       </Row>
@@ -75,10 +75,10 @@ const Points = () => {
         <Col className="square4 " style={{ marginTop: 30 }}>
           <div className="flex-rectangle">
             <div className="flex-rect-left">
-              <h3>4</h3>
-              <div>Kenneth Chen</div>
+              <h3>5</h3>
+              <div>Stanley Lee</div>
             </div>
-            <div>Social points: <span>8000</span> </div>
+            <div>Social points: <span>6012</span> </div>
           </div>
         </Col>
       </Row>
@@ -86,10 +86,10 @@ const Points = () => {
         <Col className="square4 " style={{ marginTop: 30 }}>
           <div className="flex-rectangle">
             <div className="flex-rect-left">
-              <h3>4</h3>
-              <div>Kenneth Chen</div>
+              <h3>6</h3>
+              <div>Prachi Ved</div>
             </div>
-            <div>Social points: <span>8000</span> </div>
+            <div>Social points: <span>5401</span> </div>
           </div>
         </Col>
       </Row>
@@ -97,24 +97,25 @@ const Points = () => {
         <Col className="square4 " style={{ marginTop: 30 }}>
           <div className="flex-rectangle">
             <div className="flex-rect-left">
-              <h3>4</h3>
-              <div>Kenneth Chen</div>
+              <h3>7</h3>
+              <div>Richard To</div>
             </div>
-            <div>Social points: <span>8000</span> </div>
+            <div>Social points: <span>4320</span> </div>
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col className="square4 " style={{ marginTop: 30 }}>
-          <div className="flex-rectangle">
-            <div className="flex-rect-left">
-              <h3>4</h3>
-              <div>Kenneth Chen</div>
-            </div>
-            <div>Social points: <span>8000</span> </div>
-          </div>
-        </Col>
-      </Row>
+
+<Row>
+<Col className="square4 " style={{ marginTop: 30 }}>
+  <div className="flex-rectangle">
+    <div className="flex-rect-left">
+      <h3>8</h3>
+      <div>Henry Chan</div>
+    </div>
+    <div>Social points: <span>3081</span> </div>
+  </div>
+</Col>
+</Row>
 
 
       {/* <Row>
