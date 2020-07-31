@@ -1,20 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
 import { FiVideo, FiUpload, FiCheck } from "react-icons/fi";
 
 import "./EventCard.css";
 
 const EventCard = (props) => {
+  const [uploadBtnColor, setUploadBtnColor] = useState("f7f7f7");
+  const [checkBtnDisable, setCheckBtnDisable] = useState(false);
+
+  const updateColor = () => {
+    setUploadBtnColor("#CDE0D8");
+  };
+
   return (
-    <Card onClick={() => props.showEventPane(props.title, props.description, props.date, props.time, props.duration, props.points)} style={{ width: "15rem" }}>
+    <Card
+      onClick={() =>
+        props.showEventPane(
+          props.title,
+          props.description,
+          props.date,
+          props.time,
+          props.duration,
+          props.points
+        )
+      }
+      style={{ width: "15rem" }}
+    >
       <Row className="btn-tray">
         <Col md="auto">
-          <Button variant="light" className="btn-event-action rounded-circle">
+          <Button
+            variant="light"
+            className="btn-event-action rounded-circle"
+            onClick={updateColor}
+            style={{ backgroundColor: uploadBtnColor }}
+          >
             <FiUpload />
           </Button>
         </Col>
         <Col md="auto">
-          <Button onClick={() => props.addPoints(props.points)} variant="light" className="btn-event-action rounded-circle">
+          <Button
+            onClick={() => {
+              props.addPoints(props.points);
+              setCheckBtnDisable(true);
+            }}
+            variant="light"
+            className="btn-event-action rounded-circle"
+            disabled={checkBtnDisable}
+          >
             <FiCheck />
           </Button>
         </Col>
