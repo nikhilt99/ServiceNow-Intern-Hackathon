@@ -26,13 +26,19 @@ const EventCard = (props) => {
         <Card.Text>{props.description} </Card.Text>
         <Row className="align-items-center">
           <Col as={Row}>
-            {["#EB5757", "#20CE99", "#777777"].map((backgroundColor, i) => {
+            {[
+              ["#EB5757", "A"],
+              ["#20CE99", "B"],
+              ["#777777", "G"],
+            ].map((info, i) => {
               return (
                 <Col className="profile-items pr-0" md="auto" key={i}>
                   <div
                     className="rounded-circle participant-profile"
-                    style={{ backgroundColor }}
-                  />
+                    style={{ backgroundColor: info[0] }}
+                  >
+                    {info[1]}
+                  </div>
                 </Col>
               );
             })}

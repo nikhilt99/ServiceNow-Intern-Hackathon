@@ -1,9 +1,11 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import { Row, Col } from "react-bootstrap";
 import "./App.css";
+
 import { events } from "./utils";
-import navbar from "./assets/navbar.png";
-import Navbar from "./components/Navbar/Navbar"
+import Navbar from "./components/Navbar/Navbar";
+import EventDetailsPane from "./components/EventDetailsPane/EventDetailsPane";
 
 import Home from "./pages/home";
 import Events from "./pages/events";
@@ -11,13 +13,7 @@ import Points from "./pages/points";
 import Topbar from "./components/Topbar/Topbar";
 import Forms from "./pages/forms";
 
-import { Row, Col } from "react-bootstrap";
-
-import "./App.css";
-
 class App extends React.Component {
-
-
   constructor(props) {
     super(props);
     this.addEvent = this.addEvent.bind(this);
@@ -28,11 +24,15 @@ class App extends React.Component {
       points: 112,
       teammates: "Kenneth Chen, Nikhil Tangella, Jaden Padua",
       events: [],
+<<<<<<< HEAD
       discover: []
+=======
+>>>>>>> d997e018c6737f4602b57bb343088a52340f8828
     };
   }
 
   componentDidMount() {
+<<<<<<< HEAD
     this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
     this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
     this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
@@ -44,6 +44,17 @@ class App extends React.Component {
     this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
     this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
     this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+=======
+    this.addEvent(
+      "test event",
+      "description",
+      "10/10/2020",
+      "9:00 - 10:00",
+      "1 hour",
+      3,
+      3
+    );
+>>>>>>> d997e018c6737f4602b57bb343088a52340f8828
   }
 
   addPoints(pointValue) {
@@ -80,13 +91,13 @@ class App extends React.Component {
       image: image
     });
     this.setState({
-      events: newEvents
+      events: newEvents,
     });
   }
 
   render() {
     return (
-      <div className="App" >
+      <div className="App">
         <Topbar></Topbar>
         <Row>
           <Col sm={2}>
@@ -95,7 +106,13 @@ class App extends React.Component {
           <Col md={7}>
             <Switch>
               <Route exact render={(routeProps) => (
-                <Home {...routeProps} addEvent={this.addEvent} addPoints={this.addPoints} name={this.state.name} points={this.state.points} teammates={this.state.teammates} events={this.state.events}></Home>
+                <Home {...routeProps}
+                  addEvent={this.addEvent}
+                  addPoints={this.addPoints}
+                  name={this.state.name}
+                  points={this.state.points}
+                  teammates={this.state.teammates}
+                  events={this.state.events}></Home>
               )} path="/home"></Route>
               <Route exact render={(routeProps) => (
                 <Events {...routeProps} addPoints={this.addPoints} events={this.state.discover} ></Events>
@@ -107,12 +124,10 @@ class App extends React.Component {
             </Switch>
           </Col>
           <Col>
-            <div
-              style={{ width: "100%", height: "1000%", backgroundColor: "red" }}
-            />
+            <EventDetailsPane />
           </Col>
         </Row>
-      </div >
+      </div>
     );
   }
 }
