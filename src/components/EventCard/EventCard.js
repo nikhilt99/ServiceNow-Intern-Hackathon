@@ -1,12 +1,12 @@
 import React from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
-import { FiVideo, FiUpload, FiStar } from "react-icons/fi";
+import { FiVideo, FiUpload, FiCheck } from "react-icons/fi";
 
 import "./EventCard.css";
 
 const EventCard = () => {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "17rem" }}>
       <Row className="btn-tray">
         <Col md="auto">
           <Button variant="light" className="btn-event-action rounded-circle">
@@ -15,7 +15,7 @@ const EventCard = () => {
         </Col>
         <Col md="auto">
           <Button variant="light" className="btn-event-action rounded-circle">
-            <FiStar />
+            <FiCheck />
           </Button>
         </Col>
       </Row>
@@ -30,9 +30,8 @@ const EventCard = () => {
           <Col as={Row}>
             {["#EB5757", "#20CE99", "#777777"].map((backgroundColor, i) => {
               return (
-                <Col className="profile-items pr-0" md="auto">
+                <Col className="profile-items pr-0" md="auto" key={i}>
                   <div
-                    key={i}
                     className="rounded-circle participant-profile"
                     style={{ backgroundColor }}
                   />

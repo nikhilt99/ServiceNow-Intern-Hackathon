@@ -1,37 +1,48 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
-import './Navbar.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+
+import Home from "./../../assets/home.png";
+import Event from "./../../assets/event.png";
+import Award from "./../../assets/award.png";
 
 const Navbar = () => {
   return (
-    <nav className="Nav">
-      <div className="Nav_container">
-        <Link to="/home" className="nav-a" id="nav-home">
-          <div className="navbar-item">
-            <div className="navbar-flex">
-              <img src={require("./../../assets/home.png")}></img>
-              <div>Home</div>
-            </div>
-          </div>
-        </Link>
-        <Link to="/events" className="nav-a" id="nav-events">
-          <div className="navbar-item">
-            <div className="navbar-flex">
-              <img src={require("./../../assets/event.png")}></img>
-              <div>Events</div>
-            </div>
-          </div>
-        </Link>
-        <Link to="/points" className="nav-a" id="nav-points">
-          <div className="navbar-item">
-            <div className="navbar-flex">
-              <img src={require("./../../assets/award.png")}></img>
-              <div>Points</div>
-            </div>
-          </div>
-        </Link>
-      </div>
+    <nav>
+      <NavLink
+        to="/home"
+        id="nav-home"
+        className="navbar-item"
+        activeClassName="navbar-item--active"
+      >
+        <div className="navbar-flex active">
+          <img src={Home} alt="Home" />
+          <div>Home</div>
+        </div>
+      </NavLink>
+      <NavLink
+        to="/events"
+        id="nav-events"
+        className="navbar-item"
+        activeClassName="navbar-item--active"
+      >
+        <div className="navbar-flex mt-4 active">
+          <img src={Event} alt="Event" />
+          <div>Events</div>
+        </div>
+      </NavLink>
+      <NavLink
+        to="/points"
+        id="nav-points"
+        className="navbar-item"
+        activeClassName="navbar-item--active"
+      >
+        <div className="navbar-flex mt-4 active">
+          <img src={Award} alt="Award" />
+          <div>Points</div>
+        </div>
+      </NavLink>
     </nav>
   );
-}
+};
 export default Navbar;
