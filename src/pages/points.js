@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, Figure } from "react-bootstrap";
 import "./index.css";
 import Jeffrey from "../assets/jeffrey.jpg";
+import Charlie3 from "../assets/charlie3.png"
 const Points = () => {
   return (
     <>
@@ -11,11 +12,11 @@ const Points = () => {
           <h3>1</h3>
           <img
             className="profile-img"
-            src={Jeffrey}
+            src={"https://ca.slack-edge.com/E88MEPKJQ-WPGNSFHRP-680746e59a40-192"}
             alt="profile-icon"
             style={{ height: 80, width: 80, marginLeft: 113, marginTop: -20 }}
           />
-          <h3 className="center-h3">Jeffrey Chou</h3>
+          <h3 className="center-h3">Bill McDermott</h3>
           <h3 className="center-h3-text">
             Social Points: <span className="number">12367</span>
           </h3>
@@ -75,12 +76,12 @@ const Points = () => {
           <img
             className="profile-img2"
             src={
-              "https://ca.slack-edge.com/E88MEPKJQ-WPGNSFHRP-680746e59a40-192"
+              "https://ca.slack-edge.com/E88MEPKJQ-WTFL8AFS8-bf25a9a22df0-512"
             }
             alt="profile-icon"
             style={{ height: 30, width: 30 }}
           />
-          <p className="name-2"> Bill McDermott</p>
+          <p className="name-2"> Prachi Ved</p>
           <p className="points-2"> 6287 points</p>
         </Col>
       </Row>

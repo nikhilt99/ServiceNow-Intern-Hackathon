@@ -30,105 +30,106 @@ class App extends React.Component {
 
   componentDidMount() {
     this.addEvent(
-      "test event",
-      "description",
-      "10/10/2020",
-      "9:00 - 10:00",
-      "1 hour",
+      "Intern Coffee Chat",
+      "Stir up some friendships!",
+      "Mon, Jul 8, 2020",
+      "12:00 PM PST",
+      "1 hour 30min",
       3,
       3,
-      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+      "https://images.unsplash.com/photo-1572373696785-e8bd92718f65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
     this.addEvent(
-      "test event",
-      "description",
-      "10/10/2020",
-      "9:00 - 10:00",
-      "1 hour",
+      "Summer Coach",
+      "Meet and greet!",
+      "Mon, Jun 29, 2020",
+      "10:30 AM PST",
+      "1 hours",
       3,
       3,
-      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+      "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60s"
     );
     this.addEvent(
-      "test event",
-      "description",
-      "10/10/2020",
-      "9:00 - 10:00",
+      "Exec Speaker Series",
+      "Learn and grow with us!",
+      "Tue, Jun 23, 2020",
+      "12:00 PM PST",
       "1 hour",
       3,
       3,
-      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
-    );
-    this.addEvent(
-      "test event",
-      "descriptiondesc riptiondescriptio  ndescriptiondescriptiondescriptionde scriptiondescr iptiondescr iptiondescriptionde scriptiondes criptiondescriptiondescription",
-      "10/10/2020",
-      "9:00 - 10:00",
-      "1 hour",
-      3,
-      3,
-      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+      "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
 
+    this.addEvent(
+      "Intern Orientation",
+      "Welcome aboard!",
+      "Mon, Jun 22, 2020",
+      "9:00 AM PST",
+      "5 hours",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1580191947416-62d35a55e71d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
+    );
+   this.addDiscover(
+      "Talent Show",
+      "Show us what you got!",
+      "Fri, Sep 23, 2020",
+      "6:00 PM PST",
+      "1 hour 30min",
+      3,
+      3,
+      "https://images.unsplash.com/photo-1565798846807-2af22c843402?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+    );
+  
     this.addDiscover(
-      "test event",
-      "description",
-      "10/10/2020",
-      "9:00 - 10:00",
-      "1 hour",
+      "Game Night",
+      "Calling all gamers",
+      "Mon, Sep 4, 2020",
+      "7:00 PM PST",
+      "2 hours",
       3,
       3,
-      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+      "https://images.unsplash.com/photo-1523843268911-45a882919fec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
     this.addDiscover(
-      "test event",
-      "descriptiondesc riptiondescriptio  ndescriptiondescriptiondescriptionde scriptiondescr iptiondescr iptiondescriptionde scriptiondes criptiondescriptiondescription",
-      "10/10/2020",
-      "9:00 - 10:00",
-      "1 hour",
+      "Team Workout",
+      "Get gains with the team!",
+      "Fri, Aug 23, 2020",
+      "2:00 PM PST",
+      "2 hours",
       3,
       3,
-      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
     this.addDiscover(
-      "test event",
-      "description",
-      "10/10/2020",
-      "9:00 - 10:00",
-      "1 hour",
+      "Team Tea Time",
+      "Relax with some tea!",
+      "Thurs, Aug 19, 2020",
+      "5:00 PM PST",
+      "30 min",
       3,
       3,
-      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+      "https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
     this.addDiscover(
-      "test event",
-      "description",
-      "10/10/2020",
-      "9:00 - 10:00",
-      "1 hour",
+      "Scavenger Hunt",
+      "Search for fun!",
+      "Tue, Aug 14, 2020",
+      "4:00 PM PST",
+      "1 hours",
       3,
       3,
-      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+      "https://images.unsplash.com/photo-1576579310188-eef1e26e417a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
     this.addDiscover(
-      "test event",
-      "description",
-      "10/10/2020",
-      "9:00 - 10:00",
-      "1 hour",
+      "Movie Night",
+      "Watch with the team!",
+      "Tue, Aug 6, 2020",
+      "8:00 PM PST",
+      "3 hours",
       3,
       3,
-      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
-    );
-    this.addDiscover(
-      "test event",
-      "description",
-      "10/10/2020",
-      "9:00 - 10:00",
-      "1 hour",
-      3,
-      3,
-      "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+      "https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
   }
 
