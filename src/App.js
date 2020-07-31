@@ -38,7 +38,7 @@ class App extends React.Component {
       "12:00 PM PST",
       "1 hour 30min",
       3,
-      3,
+      10,
       "https://images.unsplash.com/photo-1572373696785-e8bd92718f65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
     this.addEvent(
@@ -48,7 +48,7 @@ class App extends React.Component {
       "10:30 AM PST",
       "1 hours",
       3,
-      3,
+      8,
       "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60s"
     );
     this.addEvent(
@@ -58,7 +58,7 @@ class App extends React.Component {
       "12:00 PM PST",
       "1 hour",
       3,
-      3,
+      22,
       "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
 
@@ -108,7 +108,7 @@ class App extends React.Component {
       "6:00 PM PST",
       "1 hour 30min",
       3,
-      3,
+      25,
       "https://images.unsplash.com/photo-1565798846807-2af22c843402?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
 
@@ -119,7 +119,7 @@ class App extends React.Component {
       "7:00 PM PST",
       "2 hours",
       3,
-      3,
+      10,
       "https://images.unsplash.com/photo-1523843268911-45a882919fec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
     this.addDiscover(
@@ -129,7 +129,7 @@ class App extends React.Component {
       "2:00 PM PST",
       "2 hours",
       3,
-      3,
+      15,
       "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
     this.addDiscover(
@@ -139,7 +139,7 @@ class App extends React.Component {
       "5:00 PM PST",
       "30 min",
       3,
-      3,
+      10,
       "https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
     this.addDiscover(
@@ -149,7 +149,7 @@ class App extends React.Component {
       "4:00 PM PST",
       "1 hours",
       3,
-      3,
+      5,
       "https://images.unsplash.com/photo-1576579310188-eef1e26e417a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
     this.addDiscover(
@@ -159,7 +159,7 @@ class App extends React.Component {
       "8:00 PM PST",
       "3 hours",
       3,
-      3,
+      20,
       "https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     );
   }
