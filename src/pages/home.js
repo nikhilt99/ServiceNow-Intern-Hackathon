@@ -29,12 +29,11 @@ const Home = (props) => {
       </Row>
       <button className="create-event"> <BsPlus /> Create Event</button>
       <Row>
-
         {
           props.events.map(event => {
             return (
-              <Col>
-                <EventCard title={event.title} description={event.description} date={event.date} time={event.time} />
+              <Col md="4">
+                <EventCard title={event.title} description={event.description} date={event.date} time={event.time} image={event.image} />
               </Col>
             )
           })
@@ -45,7 +44,6 @@ const Home = (props) => {
             </button>
           </Link>
           <hr></hr>
-          <EventCard />
 
         </Col>
       </Row>

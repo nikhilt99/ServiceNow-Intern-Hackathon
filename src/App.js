@@ -22,23 +22,42 @@ class App extends React.Component {
     super(props);
     this.addEvent = this.addEvent.bind(this);
     this.addPoints = this.addPoints.bind(this);
+    this.addDiscover = this.addDiscover.bind(this);
     this.state = {
       name: "Jeffrey Chou",
-      points: 12312,
+      points: 112,
       teammates: "Kenneth Chen, Nikhil Tangella, Jaden Padua",
-      events: []
+      events: [],
+      discover: []
     };
   }
 
   componentDidMount() {
-    this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3);
+    this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
   }
 
   addPoints(pointValue) {
     this.setState({ points: this.state.points + pointValue });
   }
 
-  addEvent(title, description, date, time, duration, participants, points) {
+  addDiscover(title, description, date, time, duration, participants, points, image) {
+    var newDiscover = this.state.discover;
+    newDiscover.push({
+      title: title,
+      description: description,
+      date: date,
+      time: time,
+      duration: duration,
+      participants: participants,
+      points: points,
+      image: image
+    });
+    this.setState({
+      discoer: newDiscover
+    });
+  }
+
+  addEvent(title, description, date, time, duration, participants, points, image) {
     var newEvents = this.state.events;
     newEvents.push({
       title: title,
@@ -47,7 +66,8 @@ class App extends React.Component {
       time: time,
       duration: duration,
       participants: participants,
-      points: points
+      points: points,
+      image: image
     });
     this.setState({
       events: newEvents

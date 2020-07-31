@@ -19,7 +19,7 @@ const EventCard = (props) => {
           </Button>
         </Col>
       </Row>
-      <Card.Img variant="top" src="https://source.unsplash.com/random" />
+      <Card.Img variant="top" src={props.image} />
       <Card.Body className="pt-5">
         <Card.Subtitle>{props.date + props.time}</Card.Subtitle>
         <Card.Title>{props.title}</Card.Title>
