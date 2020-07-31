@@ -12,6 +12,10 @@
     font-size: 1.7rem;
 }
 
+.event-details__container h2 {
+    margin-bottom: 5px !important;
+}
+
 .event-details__description {
     color: #828282;
     font-weight: 500;

@@ -16,6 +16,13 @@
     line-height: 10px;
 }
 
+#topRow {}
+
+
+#points-page {
+    width: 85%;
+}
+
 .square1 {
     border: 1px #e0e0e0 solid;
     border-top: 7px #cde0d8 solid;

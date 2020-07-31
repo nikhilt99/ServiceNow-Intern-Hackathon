@@ -6,7 +6,7 @@ import "./EventDetailsPane.css";
 const EventDetailsPane = (props) => {
   return (
     <aside className="event-details__container shadow">
-      <h1 className="event-details__title">{props.title}</h1>
+      <h1 className="event-details__title title">{props.title}</h1>
       <p className="event-details__description">
         {props.description}
       </p>

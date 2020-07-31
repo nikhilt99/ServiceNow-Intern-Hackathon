@@ -4,9 +4,9 @@ import "./index.css";
 import Jeffrey from "../assets/jeffrey.jpg";
 const Points = () => {
   return (
-    <>
-      <h1 className="leaderboard">Leaderboard</h1>
-      <Row>
+    <div id="points-page">
+      <h1 className="leaderboard title">Leaderboard</h1>
+      <Row id="topRow">
         <Col className="square1">
           <h3>1</h3>
           <img
@@ -148,7 +148,7 @@ const Points = () => {
           <p className="points-2"> 1289 points</p>
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 

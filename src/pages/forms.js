@@ -20,6 +20,7 @@ function logFormData(addEvent) {
 const Forms = (props) => {
   return (
     <div>
+      <h1 className="title">Create Event</h1>
       <Form>
         <Row>
           <Col md="3">
@@ -29,7 +30,7 @@ const Forms = (props) => {
               <Form.Text className="text-muted"></Form.Text>
             </Form.Group>
           </Col>
-          <Col>
+          <Col md="6">
             <Form.Group controlId="formDescription">
               <Form.Label>Description</Form.Label>
               <Form.Control type="text" />
@@ -89,14 +90,18 @@ const Forms = (props) => {
             </Form.Group>
           </Col>
         </Row>
+        <Row>
+          <Col md="9">
+            <Form.Group controlId="formImgSource">
+              <Form.Label>Image Link</Form.Label>
+              <Form.Control
+                type="text"
+              />
+              <Form.Text className="text-muted"></Form.Text>
+            </Form.Group>
+          </Col>
 
-        <Form.Group controlId="formImgSource">
-          <Form.Label>Image Link</Form.Label>
-          <Form.Control
-            type="text"
-          />
-          <Form.Text className="text-muted"></Form.Text>
-        </Form.Group>
+        </Row>
 
         <Link to="/home">
           <button className="create-event" onClick={() => logFormData(props.addEvent)}> Submit
