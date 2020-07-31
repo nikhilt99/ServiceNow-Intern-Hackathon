@@ -55,7 +55,7 @@ const EventCard = (props) => {
       <Card.Body className="pt-5">
         <Card.Subtitle>{props.date + " " + props.time}</Card.Subtitle>
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text>{props.description} </Card.Text>
+        <Card.Text id="elipse">{props.description} </Card.Text>
         <Row className="align-items-center">
           <Col as={Row}>
             {[

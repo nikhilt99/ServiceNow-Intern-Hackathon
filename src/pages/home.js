@@ -18,7 +18,7 @@ class Home extends React.Component {
       description: "",
       date: "",
       time: "",
-      duration: 0,
+      duration: "",
       points: 0,
     };
   }
@@ -76,6 +76,7 @@ class Home extends React.Component {
                     description={event.description}
                     date={event.date}
                     time={event.time}
+                    duration={event.duration}
                     image={event.image}
                     points={event.points}
                   />

@@ -5,12 +5,7 @@
     background-color: #F8F7FA;
     border-left: 7px #CDE0D8 solid;
     position: fixed;
-    width: 100%;
-}
-
-p {
-    word-break: break-all;
-    white-space: normal;
+    width: 27%;
 }
 
 .event-details__title {
@@ -20,6 +15,8 @@ p {
 .event-details__description {
     color: #828282;
     font-weight: 500;
+    word-break: break-all;
+    white-space: normal;
 }
 
 .event-details__field-name {
