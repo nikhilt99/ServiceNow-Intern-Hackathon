@@ -27,7 +27,10 @@ const Home = (props) => {
           <p>All</p>
         </Col>
       </Row>
-      <button className="create-event"> <BsPlus /> Create Event</button>
+      <Link to="/form">
+            <button className="create-event"><BsPlus /> Create Event
+            </button>
+          </Link>
       <Row>
 
         {
@@ -40,12 +43,8 @@ const Home = (props) => {
           })
         }
         <Col>
-          <Link to="/form">
-            <button className="create-event"><BsPlus /> Create Event
-            </button>
-          </Link>
-          <hr></hr>
-          <EventCard />
+         
+      
 
         </Col>
       </Row>
