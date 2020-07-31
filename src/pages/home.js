@@ -6,7 +6,6 @@ import "./index.css";
 
 import Dashboard from "../components/Dashboard/Dashboard";
 import EventCard from "../components/EventCard/EventCard";
-import { BsPlus } from 'react-icons/bs'
 
 
 const Home = (props) => {
