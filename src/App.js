@@ -88,7 +88,7 @@ class App extends React.Component {
           <Col sm={2}>
             <Navbar />
           </Col>
-          <Col md={7}>
+          <Col md={10}>
             <Switch>
               <Route exact render={(routeProps) => (
                 <Home {...routeProps}
@@ -107,9 +107,6 @@ class App extends React.Component {
                 <Forms {...routeProps} addEvent={this.addEvent}></Forms>
               )} path="/form"></Route>
             </Switch>
-          </Col>
-          <Col>
-            <EventDetailsPane />
           </Col>
         </Row>
       </div>
