@@ -4,7 +4,7 @@ import { FiVideo, FiUpload, FiStar } from "react-icons/fi";
 
 import "./EventCard.css";
 
-const EventCard = () => {
+const EventCard = (props) => {
   return (
     <Card style={{ width: "18rem" }}>
       <Row className="btn-tray">
@@ -21,10 +21,10 @@ const EventCard = () => {
       </Row>
       <Card.Img variant="top" src="https://source.unsplash.com/random" />
       <Card.Body className="pt-5">
-        <Card.Subtitle>Tue, Aug 4, 2020 12:30 AM PST</Card.Subtitle>
-        <Card.Title>UX QE Intern Lunch</Card.Title>
+        <Card.Subtitle>{props.event.date}</Card.Subtitle>
+        <Card.Title>{props.event.title}</Card.Title>
         <Card.Text>
-          Come join us at our weekly luncheon with your fellow interns!
+          {props.event.text}
         </Card.Text>
         <Row className="align-items-center">
           <Col as={Row}>
