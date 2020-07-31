@@ -1,6 +1,27 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
+import {Link} from "react-router-dom"
 import FormControl from "react-bootstrap/FormControl";
+
+const logFormData = () => {
+
+
+  const inputData = {
+    Title: document.getElementById("formTitle").value,
+    Description: document.getElementById("formDescription").value,
+    Date: document.getElementById("formDate").value,
+    Time: document.getElementById("formTime").value,
+    Duration: document.getElementById("formDuration").value,
+    Participants: document.getElementById("formParticipants").value,
+    PointValue: document.getElementById("formPointValue").value
+  }
+  console.log(inputData)
+  return inputData
+
+}
+
+
+
 const Forms = () => {
   return (
     <div>
@@ -60,8 +81,10 @@ const Forms = () => {
           />
           <Form.Text className="text-muted"></Form.Text>
         </Form.Group>
-
-        <button className="create-event"> Submit </button>
+        <Link to="/home">
+            <button className="create-event" onClick={logFormData}> Submit 
+            </button>
+          </Link>
       </Form>
     </div>
   );
