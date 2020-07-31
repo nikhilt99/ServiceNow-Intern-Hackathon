@@ -8,7 +8,7 @@ const Events = (props) => {
     <div>
       <Row>
         <Col sm={8}>
-          <h1>Discover</h1>
+          <h1 className="title">Discover</h1>
           <Row>
             {
               props.events.map((event, i) => {
