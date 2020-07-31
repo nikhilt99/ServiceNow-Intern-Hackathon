@@ -27,7 +27,7 @@ const Forms = () => {
         </Form.Group>
 
         <Form.Group controlId="formTime">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Event Time</Form.Label>
           <Form.Control
             type="email"
             placeholder="Enter time event will take place"
@@ -45,7 +45,7 @@ const Forms = () => {
           <Form.Label>Participants</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Enter Particpant emails of events"
+            placeholder="Enter the emails of your event participants"
           />
           <Form.Text className="text-muted">
             please enter in the @servicenow.com emails of your desired particpants in comma seperated values
