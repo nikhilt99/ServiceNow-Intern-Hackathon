@@ -3,10 +3,12 @@ import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import { events } from "./utils";
 import navbar from "./assets/navbar.png";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home";
-import Events from "./pages/Events";
-import Points from "./pages/Points";
+import Navbar from "./components/Navbar/Navbar"
+
+import Home from "./pages/home";
+import Events from "./pages/events";
+import Points from "./pages/points";
+import Forms from "./pages/forms";
 
 import { Row, Col } from "react-bootstrap";
 
@@ -67,6 +69,7 @@ class App extends React.Component {
               )} path="/home"></Route>
               <Route exact component={Events} path="/events"></Route>
               <Route exact component={Points} path="/points"></Route>
+              <Route exact component={Forms} path="/form"></Route>
             </Switch>
           </Col>
           <Col>

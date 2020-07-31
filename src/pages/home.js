@@ -1,10 +1,11 @@
 import React from "react";
-import Dashboard from "../components/Dashboard/Dashboard";
 import { Row, Col } from "react-bootstrap";
-import "./index.css"
+import { BsPlus } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import "./index.css";
 
+import Dashboard from "../components/Dashboard/Dashboard";
 import EventCard from "../components/EventCard/EventCard";
-import {BsPlus} from 'react-icons/bs'
 
 const Home = (props) => {
   return (
@@ -27,7 +28,9 @@ const Home = (props) => {
       </Row>
 
       <Row>
-        <button className="create-event"> <BsPlus/> Create Event</button>
+        <Link to="/form">
+          <button className="create-event"><BsPlus/> Create Event</button>
+        </Link>
         <hr />
         <Col md={4}>
           <EventCard />
