@@ -18,7 +18,7 @@ h1 {
 .my-event-tabs p {
   font-weight: 600;
   color: #828282;
-  padding-bottom: .7rem;
+  padding-bottom: .3rem;
 }
 
 .my-event-tabs p.active {
@@ -52,6 +52,7 @@ h1 {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

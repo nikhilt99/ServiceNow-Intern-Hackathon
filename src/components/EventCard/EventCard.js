@@ -14,7 +14,7 @@ const EventCard = (props) => {
           </Button>
         </Col>
         <Col md="auto">
-          <Button variant="light" className="btn-event-action rounded-circle">
+          <Button onClick={() => props.addPoints(props.points)} variant="light" className="btn-event-action rounded-circle">
             <FiCheck />
           </Button>
         </Col>

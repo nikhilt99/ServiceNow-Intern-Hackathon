@@ -34,6 +34,16 @@ class App extends React.Component {
 
   componentDidMount() {
     this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    this.addEvent("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+
+    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    this.addDiscover("test event", "description", "10/10/2020", "9:00 - 10:00", "1 hour", 3, 3, "https://images.unsplash.com/photo-1595053826286-2e59efd9ff18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
   }
 
   addPoints(pointValue) {
@@ -87,9 +97,13 @@ class App extends React.Component {
               <Route exact render={(routeProps) => (
                 <Home {...routeProps} addEvent={this.addEvent} addPoints={this.addPoints} name={this.state.name} points={this.state.points} teammates={this.state.teammates} events={this.state.events}></Home>
               )} path="/home"></Route>
-              <Route exact component={Events} path="/events"></Route>
+              <Route exact render={(routeProps) => (
+                <Events {...routeProps} addPoints={this.addPoints} events={this.state.discover} ></Events>
+              )} path="/events"></Route>
               <Route exact component={Points} path="/points"></Route>
-              <Route exact component={Forms} path="/form"></Route>
+              <Route exact render={(routeProps) => (
+                <Forms {...routeProps} addEvent={this.addEvent}></Forms>
+              )} path="/form"></Route>
             </Switch>
           </Col>
           <Col>

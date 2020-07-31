@@ -3,7 +3,7 @@
   text-decoration: none;
   color: #474D52;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .navbar-item:hover {
@@ -15,7 +15,7 @@
   margin-right: 40px;
   padding-left: 35px;
   padding-top: .5rem;
-  padding-bottom:.5rem;
+  padding-bottom: .5rem;
   align-items: center;
 }
 

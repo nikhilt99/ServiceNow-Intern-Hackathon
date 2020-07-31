@@ -12,11 +12,11 @@ const Home = (props) => {
   return (
     <>
       <Dashboard name={props.name} points={props.points} level={props.level} teammates={props.teammates}></Dashboard>
-      <button onClick={() => props.addPoints(3)}>add 3 point</button>
 
       <h1>My Events</h1>
 
       <Row className="my-event-tabs">
+
         <Col md="auto">
           <p className="active">Upcoming</p>
         </Col>
@@ -26,17 +26,19 @@ const Home = (props) => {
         <Col md="auto">
           <p>All</p>
         </Col>
-      </Row>
-      <Link to="/form">
-        <button className="create-event"><BsPlus /> Create Event
+
+        <Link to="/form">
+          <button className="create-event"><BsPlus /> Create Event
             </button>
-      </Link>
+        </Link>
+
+      </Row>
       <Row>
         {
           props.events.map(event => {
             return (
               <Col md="4">
-                <EventCard title={event.title} description={event.description} date={event.date} time={event.time} image={event.image} />
+                <EventCard addPoints={props.addPoints} title={event.title} description={event.description} date={event.date} time={event.time} image={event.image} points={event.points} />
               </Col>
             )
           })

@@ -1,9 +1,3 @@
-.title {
-  font-weight: bold;
-  color: #474D52;
-  font-size: 35px;
-}
-
 .profile-card {
   border: 1px #E0E0E0 solid;
   border-top: 7px #CDE0D8 solid;
@@ -54,6 +48,10 @@ span {
   font-size: 25px;
 }
 
+.title {
+  margin-top: 0;
+}
+
 .progress {
   margin-top: 3px;
   margin-bottom: 10px;
@@ -66,9 +64,9 @@ span {
 
 #Dashboard {
   font-family: 'Gilroy';
-  width: 500px;
-  margin-left: 31px;
-  margin-top: 10px;
+  width: 100%;
+
+
   margin-bottom: 40px;
   text-align: left;
   font-size: 14px;
