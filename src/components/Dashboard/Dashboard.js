@@ -18,10 +18,10 @@ const Dashboard = (props) => {
                   Social points: <span>{props.points}</span>
                 </div>
                 <div>
-                  Level <span>{props.level}</span>
+                  Level <span>{Math.floor(props.points / 20)}</span>
                 </div>
               </div>
-              <ProgressBar now={60} />
+              <ProgressBar now={props.points % 20 * 5} />
             </div>
             <div>{"Team Members: " + props.teammates}</div>
           </div>

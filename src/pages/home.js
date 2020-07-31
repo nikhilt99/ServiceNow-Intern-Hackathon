@@ -11,10 +11,11 @@ import {
 } from "react-bootstrap";
 import EventCard from "../components/EventCard/EventCard";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div>
-      <Dashboard name="Jeffrey Chou" points="375" level="2" teammates="Kenneth Chen, Nikhil Tangella, Jaden Padua"></Dashboard>
+      <Dashboard name={props.name} points={props.points} level={props.level} teammates={props.teammates}></Dashboard>
+      <button onClick={() => props.addPoints(3)}>add 3 point</button>
       <h1>My Events</h1>
       <Row className="my-event-tabs">
         <Col md="auto">
@@ -33,7 +34,7 @@ const Home = () => {
           <EventCard />
         </Col>
       </Row>
-    </div>
+    </div >
   );
 }
 
