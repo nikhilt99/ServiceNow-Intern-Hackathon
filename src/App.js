@@ -9,6 +9,7 @@ import Home from "./pages/home";
 import Events from "./pages/events";
 import Points from "./pages/points";
 import Topbar from "./components/Topbar/Topbar";
+import Forms from "./pages/forms";
 
 import Dashboard from "./components/Dashboard/Dashboard";
 import sidebar from "./assets/sidebar.png";
@@ -78,6 +79,7 @@ class App extends React.Component {
               )} path="/home"></Route>
               <Route exact component={Events} path="/events"></Route>
               <Route exact component={Points} path="/points"></Route>
+              <Route exact component={Forms} path="/form"></Route>
             </Switch>
           </Col>
         </Row>
